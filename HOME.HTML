@@ -1,0 +1,247 @@
+<html>
+    <head>
+        <title>
+               sruthi - project
+        </title>
+        <link herf="./CSS/style.css" type="text/css" rel="stylesheet">
+        <style>
+
+            .main-header
+{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: aqua;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.main-header.logo
+{
+   width: 55px;
+   height: 55px;
+   padding: 8px 14px;
+   margin: 10 px 0;
+}
+ .main-header.logo img
+ {
+    border-radius: 15px;
+ }
+ .main-header.title
+ {
+   text-align: center;
+   font-family: 'Courier New', Courier, monospace;
+   font-size: 30px;
+   font-style: italic;
+   text-transform: capitalize;
+ }
+ h1
+ {
+   color: brown;
+ }
+ .bgimage
+ {
+   background-image: url("../IMAGES/bg2.png");
+   background-repeat:  no-repeat;
+   background-position: center;
+   text-align: center;
+ }
+ .maincomponent
+ {
+    display: flex;
+  border: 2px solid black;
+ }
+ .box
+ {
+  width: 150px;
+  height: 250px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 8re;
+  transition: width 2s, ;
+  transition-delay: 2s;
+ }
+ #box1
+ {
+  background-color: rgb(59, 184, 48);
+  /* transition: 2s;
+  transition-timing-function: linear; */
+ }
+ /* #box1:hover
+ {
+   background-color: rgb(216, 219, 26);
+    width: 500px; 
+ } */
+ #box2
+ {
+  background-color: rgb(204, 48, 209);
+  /* transition: 2s;
+  transition-timing-function: ease-in; */
+ }
+ /* #box2:hover
+ {
+   background-color: chocolate;
+   width: 500px;
+ } */
+ #box3
+ {
+  background-color: rgb(9, 255, 0);
+  /* transition: 2s;
+  transition-timing-function: ease-in-out; */
+ }
+ /* #box3:hover
+ {
+   background-color: chartreuse;
+   width: 500px;
+ } */
+ #box4
+ {
+  background-color: crimson;
+  /* transition: 2s;
+  transition-timing-function: ease-out; */
+ }
+ /* #box4:hover
+ {
+   background-color: blueviolet;
+   width: 500px;
+ } */
+ .newrotate
+ {
+   width: 150px;
+   height: 150px;
+   border-radius: 15px;
+   background-color: darkolivegreen;
+   transition: width 2s, height 2s, transform 2s;
+ }
+ #newrotate:hover
+ {
+   width: 500px;
+   height: 25px;
+   transform: rotate(180deg);
+ }
+ @keyframes animid {
+   from{background-color: darksalmon;}
+   to{background-color: rgb(13, 167, 102);}
+ }
+ 
+ .animi
+ {
+   width: 160px;
+   height: 160px;
+   background-color: red;
+   animation-name: animid;
+   animation-duration: 6s;
+ }
+ .scrolltext
+ {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: italic;
+  font-size: 25px;
+  width: 100%;
+  white-space: inherit;
+  color: goldenrod;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: 2px solid red;
+ }
+ @keyframes scrollleft {
+  from{transform: translateX(100%);}
+ to{transform: translateX(-100%);}
+ }
+ .scrolltext span
+ {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scrollleft 20s linear infinite;
+  /* scroll left to right */
+ }
+   .scrollright
+ {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: italic;
+  font-size: 25px;
+  width: 100%;
+  white-space: inherit;
+  color: goldenrod;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: 2px solid red;
+ }  
+  .scrollright span
+ {
+  display: inline-block;
+  padding-right: 100%;
+  animation-name: scroll-right;
+  animation-duration: 20ss;
+ }
+  @keyframes scroll-right {
+  from{transform: translateX(-100%);}
+  to{transform: translateX(100%);}
+ }
+
+        </style>
+    </head>
+    <body>
+       <div class="main-header">
+           <div class="logo">
+              <img src="./IMAGES/bg2.png" width="50" height="50">
+           </div>
+            <div class="title">
+              <h1> sruthi - project</h1>
+           </div>
+       <div class="bgimage">
+       <h2> welcome to sruthi-forth folio</h2>
+       <p> my name is sruthi im from khammam i have complited my inter in sri chaithanya college at khammam i have so many friends in my college
+        after my inter board exams i have write eapcet exam and i qualifide in that exam and fionnaly after 3 months
+         i have joined in btech college of mallareddy at maisamaguda
+       </p>
+
+       <div class="maincomponent">
+           <div class="box" id="box1">1 1.student name = sruthi<br>2.school name= ghs gokinepalli<br>school add = gokinepalli<br>gpa = 9.3<br>cls teacher=anatha laxmi
+        <br>my fav period= sports<br>our pet sir name is= narsimha rao</div>
+           <div class="box" id="box2">2 1.student name =sruthi<br>2.college name= sri chaithanya<br>college add = khammam<br>cgpa = 890<br> my fav sub=physics<br>pet mam name= swaroopa<br>i love my college </div>
+           <div class="box" id="box3">3</div>
+           <div class="box" id="box4">4</div>
+
+       </div>
+       </div>
+       <div class="newrotate" id="newrotate"></div>
+       <div class="animi" id="animi"></div>
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3803.89491193701!2d78.44945129999999!3d17.560189299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb8fa7074ed8d3%3A0x7bfc5a55a0a68f9f!2sMALLA%20REDDY%20ENGINEERING%20COLLEGE%20FOR%20WOMEN!5e0!3m2!1sen!2sin!4v1756794734762!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <video src="video.mp4" width="500x" height="250px" controls>
+         <source src="v.mp4" type="video/mp4">
+         <source src="v.mp4" type="video/vgg">
+         </video>
+
+       <audio src="audio.mp3" controls>
+         <source src="v.ogg" type="video/ogg">
+         <source src="v.mpeg" type="video/mpeg">
+       </audio>
+       
+
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/dMZ-1gMiIEY?si=4u_ANeIZ1PvT3WwZ&amp;start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+       <br><br><br><br>
+       <hr>
+       <br><br><br><br>
+
+       <div class="scrolltext ">
+        <span> welcome to mrecw college </span>
+       </div>
+
+       <br><br><br><br>
+       <hr>
+       <br><br><br><br>
+
+       <div class="scrolltext">
+        <span> welcome to mrecw college </span>
+      </div>
+
+      <br><br><br><br>
+      <hr>
+      <b><br><br><br>
+        <div class="scrollright">
+          <span> welcome to mrecw college</span>
+        </div>
+      </body>
+</html>
